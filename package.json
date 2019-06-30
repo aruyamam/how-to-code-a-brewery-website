@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "start": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "dev": "webpack-dev-server --mode development --open"
   },
   "license": "MIT",
   "author": "Kevin Powell",
