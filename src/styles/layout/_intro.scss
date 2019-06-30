@@ -11,8 +11,6 @@
     repeat: no-repeat;
   }
 
-  display: grid;
-  grid: auto-flow / minmax(1em, 1fr) minmax(400px, 650px) minmax(1em, 1fr);
   padding: 10vh 0;
   text-align: center;
   color: $clr-brown-base;
