@@ -1,5 +1,5 @@
 {
   "parser": ["css"],
-  "plugins": ["stylelint-scss"],
-  "extends": ["stylelint-config-standard", "./node_modules/prettier-stylelint/config.js"],
+  "plugins": ["stylelint-scss", "stylelint-prettier"],
+  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
 }

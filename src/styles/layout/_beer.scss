@@ -3,37 +3,58 @@
 }
 
 .grid-carousel {
-  grid-column: 1 / -1;
   display: grid;
   grid: auto-flow / 2em repeat(5, 1fr) 2em;
-  max-width: 1200px;
+  grid-column: 1 / -1;
   margin: 3em auto;
+  max-width: 1200px;
   position: relative;
 
+  &__item {
+    @include apply-order(5);
+    transform: scale(0.7);
+
+    &.featured {
+      transform: scale(1);
+    }
+  }
+
+  &__caption {
+    opacity: 0;
+  }
+
+  &__item.featured &__caption {
+    opacity: 1;
+  }
+
   &__button {
-    width: 1em;
     all: unset;
     padding: 0.5em;
+    width: 1em;
+    &:last-of-type {
+      order: 99;
+    }
   }
 
   &::before,
   &::after {
+    bottom: 0;
     content: '';
     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
     left: 0;
+    position: absolute;
     right: 0;
+    top: 0;
+    z-index: 10;
   }
 
   &::before {
+    background: linear-gradient(to right, rgba(#fff, 0.9), rgba(#fff, 0.6));
     grid-column: 2 / 4;
-    background: linear-gradient(to right, rgba(white, 0.9), rgba(white, 0.6));
   }
 
   &::after {
+    background: linear-gradient(to left, rgba(#fff, 0.9), rgba(#fff, 0.6));
     grid-column: -2 / -4;
-    background: linear-gradient(to left, rgba(white, 0.9), rgba(white, 0.6));
   }
 }
