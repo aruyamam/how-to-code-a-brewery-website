@@ -1,0 +1,36 @@
+.card {
+  box-shadow: 0 5px 0.5em rgba($color: #000, $alpha: 0.3);
+  grid-row: 1 / 4;
+  outline: 2px solid currentColor;
+  outline-offset: -1em;
+  padding: 2em;
+
+  &--dark {
+    background: $clr-blue-dark;
+    color: $clr-blue-light;
+
+    .section__title {
+      color: #fff;
+    }
+  }
+
+  &--start {
+    grid-column: 2 / span 4;
+  }
+
+  &--end {
+    grid-column: 4 / span 4;
+  }
+
+  &__image {
+    grid-row: 2 / 5;
+    z-index: -1;
+    &--start {
+      grid-column: 2 / span 3;
+    }
+
+    &--end {
+      grid-column: 5 / span 3;
+    }
+  }
+}

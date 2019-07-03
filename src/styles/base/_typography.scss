@@ -1,12 +1,12 @@
 @import url('https://use.typekit.net/npi8tkc.css');
 
 body {
-  margin: 0;
+  color: $clr-brown-dark;
   font-family: $ff-body;
   font-size: 1.3125rem;
-  line-height: 1.5;
-  color: $clr-brown-dark;
   font-weight: $fw-normal;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1,
@@ -24,15 +24,15 @@ figure {
 }
 
 .section__title {
-  font-size: 4.75rem;
   color: $clr-blue-dark;
+  font-size: 4.75rem;
 }
 
 .section__subtitle {
-  font-size: 1.69rem;
   color: $clr-blue-light;
+  font-size: 1.69rem;
   font-style: italic;
-  text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }

@@ -10,11 +10,11 @@ const getOrder = (elem) => {
   return order;
 };
 
-const featuredItem = (order, slide) => {
+const featuredItem = (order, elem) => {
   if (order === 3) {
-    slide.classList.add('featured');
+    elem.classList.add('featured');
   } else {
-    slide.classList.remove('featured');
+    elem.classList.remove('featured');
   }
 };
 

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .section {
   display: grid;
   grid: auto-flow / minmax(1em, 1fr) minmax(300px, 650px) minmax(1em, 1fr);
@@ -14,4 +19,8 @@
   p {
     grid-column: 2 / 3;
   }
+}
+
+.section--card {
+  grid: repeat(5, 1fr) / minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
 }
